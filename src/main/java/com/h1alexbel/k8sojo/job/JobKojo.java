@@ -1,11 +1,8 @@
 package com.h1alexbel.k8sojo.job;
 
-import com.h1alexbel.k8sojo.Container;
-import com.h1alexbel.k8sojo.DcContainer;
 import com.h1alexbel.k8sojo.Kojo;
 import com.h1alexbel.k8sojo.Metadata;
 import com.h1alexbel.k8sojo.Spec;
-import java.util.List;
 import lombok.RequiredArgsConstructor;
 
 /**
