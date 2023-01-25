@@ -6,9 +6,8 @@
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/h1alexbel/k8sojo/blob/master/LICENSE.txt)
 [![PDD status](http://www.0pdd.com/svg?name=h1alexbel/k8sojo)](http://www.0pdd.com/p?name=h1alexbel/k8sojo)
 
-[![mvn](https://github.com/h1alexbel/k8sojo/actions/workflows/maven.yml/badge.svg)](https://github.com/h1alexbel/k8sojo/actions/workflows/maven.yml)
-
-[//]: # ([![codecov]&#40;https://codecov.io/github/h1alexbel/k8sojo/branch/master/graph/badge.svg?token=H0DGTD88KX&#41;]&#40;https://codecov.io/github/ticketsyncs/clockfarm&#41;)
+[![mvn](https://github.com/h1alexbel/k8sojo/actions/workflows/mvn.yml/badge.svg)](https://github.com/h1alexbel/k8sojo/actions/workflows/mvn.yml)
+[![codecov](https://codecov.io/github/h1alexbel/k8sojo/branch/master/graph/badge.svg?token=sEB3gXmLwZ)](https://codecov.io/github/h1alexbel/k8sojo)
 [![Hits-of-Code](https://hitsofcode.com/github/h1alexbel/k8sojo)](https://hitsofcode.com/view/github/h1alexbel/k8sojo)
 
 **Kubernetes objects - Java objects** - It's a simple object-oriented representation of [```Kubernetes```](https://kubernetes.io) objects(pods, services,
