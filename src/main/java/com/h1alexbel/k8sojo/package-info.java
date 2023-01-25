@@ -20,20 +20,9 @@
  * SOFTWARE.
  */
 
-package com.h1alexbel.k8sojo;
-
-/**
- * Kubernetes metadata.
- *
+/** K8sojo
  * @author Aliaksei Bialiauski (abialiauski@solvd.com)
  * @since 0.0.1
  */
-public interface Metadata {
 
-  /**
-   * Name.
-   *
-   * @return name as string
-   */
-  String name();
-}
+package com.h1alexbel.k8sojo;
