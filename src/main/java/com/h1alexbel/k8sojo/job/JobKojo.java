@@ -38,20 +38,3 @@ public final class JobKojo implements Kojo {
     return this.spec;
   }
 }
-
-class T {
-  public static void main(String[] args) {
-    final Container realo = new DcContainer("realo", "abialiauski/realo", List.of("-java"));
-    Kojo kojo = new JobKojo(
-      new JobMetadata("realo-job"),
-      new JobSpec(
-        new JobTemplate(
-          new JobTemplateSpec(
-            List.of(realo), "Never"
-          )
-        ),
-        4)
-    );
-    System.out.println(kojo.apiVersion());
-  }
-}
