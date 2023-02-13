@@ -30,23 +30,20 @@ You add this to your `pom.xml`:
 ## [Job](https://kubernetes.io/docs/concepts/workloads/controllers/job/) API
 
 ```java
-import com.h1alexbel.k8sojo.Container;
-import com.h1alexbel.k8sojo.DcContainer;
-import com.h1alexbel.k8sojo.Kojo;
-import com.h1alexbel.k8sojo.Metadata;
-import com.h1alexbel.k8sojo.Spec;
 
-final Container realo = new DcContainer("realo", "abialiauski/realo", List.of("-java"));
-    Kojo kojo = new JobKojo(
-      new JobMetadata("realo-job"),
-      new JobSpec(
-        new JobTemplate(
-          new JobTemplateSpec(
-            List.of(realo), "Never"
-          )
-        ),
-        4)
-    );
+import com.h1alexbel.k8sojo.DcContainer;
+
+final Container realo=new DcContainer("realo","abialiauski/realo",List.of("-java"));
+  Kojo kojo=new JobKojo(
+  new JobMetadata("realo-job"),
+  new JobSpec(
+  new JobTemplate(
+  new JobTemplateSpec(
+  List.of(realo),"Never"
+  )
+  ),
+  4)
+  );
 ```
 
 ## Pod API

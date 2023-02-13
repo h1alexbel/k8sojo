@@ -2,8 +2,6 @@ package com.h1alexbel.k8sojo.job;
 
 import com.h1alexbel.k8sojo.Container;
 import com.h1alexbel.k8sojo.TemplateSpec;
-import java.util.Collections;
-import java.util.List;
 import lombok.RequiredArgsConstructor;
 
 /**
