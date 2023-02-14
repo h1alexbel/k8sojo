@@ -20,7 +20,7 @@ public final class JobSpec implements Spec {
   }
 
   @Override
-  public int backOffLimit() {
+  public int backoffLimit() {
     return this.backoff;
   }
 }

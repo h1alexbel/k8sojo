@@ -30,17 +30,7 @@ package com.h1alexbel.k8sojo;
  */
 public interface Spec {
 
-  /**
-   * Template.
-   *
-   * @return template
-   */
   Template template();
 
-  /**
-   * BackOffLimit.
-   *
-   * @return backoff limit as int
-   */
-  int backOffLimit();
+  int backoffLimit();
 }

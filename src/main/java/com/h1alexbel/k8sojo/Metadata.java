@@ -22,6 +22,8 @@
 
 package com.h1alexbel.k8sojo;
 
+import lombok.RequiredArgsConstructor;
+
 /**
  * Kubernetes metadata.
  *
@@ -36,4 +38,18 @@ public interface Metadata {
    * @return name as string
    */
   String name();
+
+  @RequiredArgsConstructor
+  final class Simple implements Metadata {
+
+    /**
+     * Name.
+     */
+    private final String name;
+
+    @Override
+    public String name() {
+      return this.name;
+    }
+  }
 }

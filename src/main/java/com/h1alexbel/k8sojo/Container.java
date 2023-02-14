@@ -22,6 +22,8 @@
 
 package com.h1alexbel.k8sojo;
 
+import lombok.RequiredArgsConstructor;
+
 /**
  * Container.
  *
@@ -50,4 +52,39 @@ public interface Container {
    * @return list of commands
    */
   Iterable<String> commands();
+
+  /**
+   * Docker container.
+   */
+  @RequiredArgsConstructor
+  final class Dc implements Container {
+
+    /**
+     * Name.
+     */
+    private final String name;
+    /**
+     * Image.
+     */
+    private final String image;
+    /**
+     * Commands.
+     */
+    private final Iterable<String> commands;
+
+    @Override
+    public String name() {
+      return this.name;
+    }
+
+    @Override
+    public String image() {
+      return "docker.io/" + this.image;
+    }
+
+    @Override
+    public Iterable<String> commands() {
+      return this.commands;
+    }
+  }
 }
